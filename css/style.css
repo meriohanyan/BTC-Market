@@ -524,6 +524,253 @@ main .vip__section .vip__img {
     font-size: 35px;
   }
 }
+main .three__easy__steps__section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+@media screen and (max-width: 768px) {
+  main .three__easy__steps__section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+main .three__easy__steps__section .three__easy__steps {
+  max-width: 900px;
+  margin: 0 auto;
+}
+main .three__easy__steps__section .three__easy__steps h2 {
+  color: #18181B;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+main .three__easy__steps__section .three__easy__steps .three__easy__steps__items {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+main .three__easy__steps__section .three__easy__steps .three__easy__steps__items .three__easy__steps__item {
+  text-align: center;
+  width: 278px;
+}
+main .three__easy__steps__section .three__easy__steps .three__easy__steps__items .three__easy__steps__item .icon {
+  padding: 16px;
+  background-color: #FCFBF8;
+  width: 72px;
+  height: 72px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+main .three__easy__steps__section .three__easy__steps .three__easy__steps__items .three__easy__steps__item h6 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #18181B;
+  margin: 16px 0px;
+}
+main .three__easy__steps__section .three__easy__steps .three__easy__steps__items .three__easy__steps__item p {
+  color: #27272A;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+@media screen and (max-width: 768px) {
+  main .three__easy__steps__section .three__easy__steps .three__easy__steps__items {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .three__easy__steps__section .three__easy__steps .three__easy__steps__items {
+    gap: 32px;
+  }
+}
+main .three__easy__steps__section .three__easy__steps a {
+  display: block;
+  text-decoration: none;
+  background-color: #4CFDC7;
+  color: #01271C;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 32px;
+  margin: 0 auto 32px auto;
+}
+main .three__easy__steps__section .three__easy__steps .three__easy__steps__stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #27272A;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main .trade__on__the__go h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0px 0px 32px 0px;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+main .trade__on__the__go p {
+  color: #27272A;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0px auto 32px auto;
+}
+main .trade__on__the__go .totg__store {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+@media screen and (max-width: 580px) {
+  main .trade__on__the__go .totg__store {
+    flex-wrap: wrap;
+  }
+}
+main .trade__on__the__go .totg__store .app__store img, main .trade__on__the__go .totg__store .google__play img {
+  display: block;
+  width: 150px;
+  height: 40px;
+}
+main .trade__on__the__go .totg__store .app__store .app__store__stars, main .trade__on__the__go .totg__store .app__store .google__play__stars, main .trade__on__the__go .totg__store .google__play .app__store__stars, main .trade__on__the__go .totg__store .google__play .google__play__stars {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+main .trade__on__the__go .totg__store .app__store .app__store__stars img, main .trade__on__the__go .totg__store .app__store .google__play__stars img, main .trade__on__the__go .totg__store .google__play .app__store__stars img, main .trade__on__the__go .totg__store .google__play .google__play__stars img {
+  width: unset;
+  height: unset;
+}
+main .trade__on__the__go a {
+  display: block;
+  text-decoration: none;
+  padding: 9px 36px;
+  color: #18181B;
+  border: 1px solid #18181B;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 32px auto 0px auto;
+}
+main .latest__news__section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+main .latest__news__section h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0px 0px 32px 0px;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+main .latest__news__section .latest__news__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+main .latest__news__section .latest__news__items .latest__news__item {
+  box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+  border-radius: 8px;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover {
+  max-width: 357px;
+  max-height: 148px;
+  overflow: hidden;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  padding: 0px 16px;
+}
+@media screen and (max-width: 376px) {
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status {
+    flex-wrap: wrap;
+  }
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p {
+    width: 100%;
+    text-align: center;
+  }
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status:first-child {
+    margin-bottom: 8px;
+  }
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p {
+  margin: 0px;
+  color: #18181B;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p:first-child {
+  padding: 6px;
+  background-color: #BDFFEB;
+  border-radius: 4px;
+  color: #01271C;
+  font-size: 15px;
+}
+main .latest__news__section .latest__news__items .latest__news__item h4 {
+  font-size: min(24px, max(12px + 2vw));
+  max-width: 350px;
+  margin: 0;
+  padding: 0px 16px;
+}
+main .latest__news__section .latest__news__items .latest__news__item h4 a {
+  color: #18181B;
+  text-decoration: none;
+}
+main .latest__news__section .latest__news__items .latest__news__item .read__more {
+  display: block;
+  text-decoration: none;
+  color: #18181B;
+  margin-top: 16px;
+  padding: 0px 16px 16px 16px;
+}
+@media screen and (max-width: 1024px) {
+  main .latest__news__section .latest__news__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main .latest__news__section .check__out__link {
+  display: block;
+  color: #18181B;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 64px;
+}
+main .latest__news__section .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+@media screen and (max-width: 768px) {
+  main .latest__news__section .social {
+    flex-wrap: wrap;
+  }
+}
+main .latest__news__section .social a {
+  color: #18181B;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 @media screen and (max-width: 768px) {
   main .markets__section, main .trade__section {
     margin-bottom: 64px;
