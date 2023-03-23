@@ -41,8 +41,26 @@ nav .nav .nav__items .nav__menu li {
   list-style-type: none;
 }
 nav .nav .nav__items .nav__menu li a {
+  position: relative;
   color: #18181B;
   text-decoration: none;
+  transition: 0.3s;
+}
+nav .nav .nav__items .nav__menu li a::before {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: #4CFDC7;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+nav .nav .nav__items .nav__menu li a:hover {
+  color: #4CFDC7;
+}
+nav .nav .nav__items .nav__menu li a:hover::before {
+  width: 100%;
 }
 nav .nav .nav__btns {
   display: flex;
@@ -54,15 +72,26 @@ nav .nav .nav__btns button {
   cursor: pointer;
   color: #18181B;
   font-size: 12px;
+  transition: 0.3s;
 }
 nav .nav .nav__btns button#login {
   border: 1px solid #18181B;
   background-color: transparent;
 }
+nav .nav .nav__btns button#login:hover {
+  color: #ffffff;
+  background-color: #01271C;
+  border-color: #01271C;
+}
 nav .nav .nav__btns button#signup {
   border: 1px solid #18181B;
   background-color: #4CFDC7;
   color: #01271C;
+}
+nav .nav .nav__btns button#signup:hover {
+  color: #ffffff;
+  background-color: #10B981;
+  border-color: #10B981;
 }
 nav .nav .nav__btns img {
   width: 50px;
@@ -168,15 +197,26 @@ header .header .header__left .header__left__btns a {
   text-decoration: none;
   border-radius: 4px;
   padding: 9px 33px;
+  transition: 0.3s;
 }
 header .header .header__left .header__left__btns a:nth-child(1) {
   color: #01271C;
   background-color: #4CFDC7;
 }
+header .header .header__left .header__left__btns a:nth-child(1):hover {
+  color: #ffffff;
+  background-color: #10B981;
+  border-color: #10B981;
+}
 header .header .header__left .header__left__btns a:nth-child(2) {
   color: #18181B;
   background-color: transparent;
   border: 1px solid #18181B;
+}
+header .header .header__left .header__left__btns a:nth-child(2):hover {
+  color: #ffffff;
+  background-color: #01271C;
+  border-color: #01271C;
 }
 header .header .header__left .header__left__stars {
   display: flex;
@@ -244,6 +284,7 @@ main .markets__section .markets .markets__table tbody tr td:nth-child(1), main .
   gap: 16px;
 }
 main .markets__section .markets .markets__table tbody tr td a {
+  width: 54px;
   display: block;
   text-decoration: none;
   background-color: #4CFDC7;
@@ -253,6 +294,13 @@ main .markets__section .markets .markets__table tbody tr td a {
   padding: 16px 0px;
   font-size: 12px;
   text-align: center;
+  margin: 0px 0px 0px 16px;
+  transition: 0.3s;
+}
+main .markets__section .markets .markets__table tbody tr td a:hover {
+  color: #ffffff;
+  background-color: #10B981;
+  border-color: #10B981;
 }
 @media screen and (max-width: 768px) {
   main .markets__section .markets .markets__table {
@@ -491,8 +539,14 @@ main .vip__section .learn__more {
   margin: auto;
   margin-top: 70px;
   box-sizing: border-box;
-  width: 150px;
-  height: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.3s;
+}
+main .vip__section .learn__more:hover {
+  color: #ffffff;
+  background-color: #10B981;
+  border-color: #10B981;
 }
 main .vip__section .learn__more a {
   font-size: 14px;
@@ -597,6 +651,12 @@ main .three__easy__steps__section .three__easy__steps a {
   width: fit-content;
   padding: 9px 32px;
   margin: 0 auto 32px auto;
+  transition: 0.3s;
+}
+main .three__easy__steps__section .three__easy__steps a:hover {
+  color: #ffffff;
+  background-color: #10B981;
+  border-color: #10B981;
 }
 main .three__easy__steps__section .three__easy__steps .three__easy__steps__stars {
   display: flex;
@@ -677,8 +737,9 @@ main .latest__news__section .latest__news__items {
   margin-bottom: 64px;
 }
 main .latest__news__section .latest__news__items .latest__news__item {
-  box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+  box-shadow: 0px 0px 32px rgba(9, 24, 26, 0.1);
   border-radius: 8px;
+  transition: all 0.3s;
 }
 main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover {
   max-width: 357px;
@@ -691,6 +752,7 @@ main .latest__news__section .latest__news__items .latest__news__item .latest__ne
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.3s;
 }
 main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status {
   display: flex;
@@ -738,6 +800,16 @@ main .latest__news__section .latest__news__items .latest__news__item .read__more
   color: #18181B;
   margin-top: 16px;
   padding: 0px 16px 16px 16px;
+  transition: 0.3s;
+}
+main .latest__news__section .latest__news__items .latest__news__item:hover {
+  box-shadow: 0px 0px 32px rgba(9, 24, 26, 0.3);
+}
+main .latest__news__section .latest__news__items .latest__news__item:hover h4 a {
+  color: #01271C;
+}
+main .latest__news__section .latest__news__items .latest__news__item:hover .read__more {
+  color: #10B981;
 }
 @media screen and (max-width: 1024px) {
   main .latest__news__section .latest__news__items {
@@ -751,6 +823,9 @@ main .latest__news__section .check__out__link {
   text-decoration: none;
   text-align: center;
   margin-bottom: 64px;
+}
+main .latest__news__section .check__out__link:hover {
+  text-decoration: underline;
 }
 main .latest__news__section .social {
   display: flex;
@@ -770,6 +845,40 @@ main .latest__news__section .social a {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: 0.3s;
+}
+main .latest__news__section .social a svg path {
+  transition: 0.3s;
+}
+main .latest__news__section .social a:hover {
+  color: #10B981;
+}
+main .latest__news__section .social a:hover svg path {
+  fill: #10B981;
+}
+main .before__footer h2 {
+  text-align: center;
+  font-size: min(40px, max(20px + 2vw));
+  font-weight: 400;
+  max-width: 427px;
+  margin: 0px auto 32px auto;
+}
+main .before__footer a {
+  display: block;
+  text-decoration: none;
+  background-color: #4CFDC7;
+  color: #01271C;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 32px;
+  margin: 0 auto 32px auto;
+  transition: 0.3s;
+}
+main .before__footer a:hover {
+  color: #ffffff;
+  background-color: #10B981;
+  border-color: #10B981;
 }
 @media screen and (max-width: 768px) {
   main .markets__section, main .trade__section {
@@ -778,6 +887,100 @@ main .latest__news__section .social a {
   main .markets__section .why__btc__markets .wbm__items {
     gap: 32px;
   }
+}
+
+footer {
+  margin-top: 128px;
+}
+footer .footer {
+  display: flex;
+  gap: 64px;
+}
+footer .footer .footer__item {
+  flex: 1 1 127px;
+}
+footer .footer .footer__item h4 {
+  margin-top: 0px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #18181B;
+}
+footer .footer .footer__item ul {
+  padding: 0px;
+}
+footer .footer .footer__item ul li {
+  list-style-type: none;
+}
+footer .footer .footer__item ul li a {
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #3F3F46;
+}
+footer .footer .footer__item ul li a svg path {
+  fill: #3F3F46;
+}
+footer .footer .footer__item ul li img {
+  width: 72px;
+  height: 24px;
+  display: block;
+  margin-bottom: 8px;
+}
+footer .footer .footer__item ul li:hover {
+  text-decoration: underline;
+}
+footer .footer .footer__item:nth-child(4) ul li a {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  footer .footer {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer {
+    text-align: center;
+  }
+  footer .footer .footer__item {
+    flex: 1 1 100%;
+  }
+  footer .footer .footer__item ul li img {
+    margin: 0px auto 8px auto;
+  }
+  footer .footer .footer__item:nth-child(4) li a {
+    justify-content: center;
+  }
+}
+footer .footer__info {
+  margin-top: 128px;
+  margin-bottom: 64px;
+  color: #27272A;
+  font-size: 14px;
+  text-align: center;
+}
+footer .footer__info p {
+  margin: 0px;
+}
+footer .footer__info .footer__info__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__info .footer__info__top {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  footer .footer__info .footer__info__top p {
+    width: 100%;
+  }
+}
+footer .footer__info .footer__info__bottom {
+  font-size: 12px;
 }
 
 /*NORMALIZE CSS*/
